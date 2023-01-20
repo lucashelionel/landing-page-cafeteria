@@ -5,57 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Café</title>
+
     <link rel="shortcut icon" href="/src/images/favicon.ico" type="image/x-icon">
+    
     <meta name="description" content="Cafeteria especializada em cafés Gourmet de alta qualidade">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
 </head>
 <body>
-    <header>
-        <a href="">
-            <h1></h1>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">
+            <h1>Code Café</h1>
         </a>
 
         <nav>
             <ul>
-                <li><a href="">Quem Somos</a></li>
-                <li><a href="">Onde Estamos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li> <!-- o # serve para lincar e ir direto para a seção que deseja -->
+                <li><a href="#onde-estamos">Onde Estamos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-
+        <section class="painel">
+            <h2>Aqui o café é só o começo.</h2>
         </section>
 
-        <section>
-
+<!-- tem esse nome generico pois o codigo vai ser repetido na secao 4 e o id para fazer o link do menu para ele  -->
+        <section class="secao-com-texto" id="quem-somos">
+            <header>
+                <img src="/src/images/logo-secoes.png" alt="">
+                <h2>Quem Somos</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus officiis sit ad, reprehenderit est, temporibus rerum ipsa rem iusto, provident earum doloribus? Ipsam commodi dolore voluptas, nostrum minima molestiae quo! </p>
+            </header>
         </section>
 
-        <section>
-
+        <section class="ladrilho">
+            <div class="grande"></div>
+            <div class="pequeno grao"></div>
+            <div class="pequeno"></div>
+            <div class="medio"></div>
         </section>
 
-        <section>
-
+        <section class="secao-com-texto onde-estamos" id="onde-estamos">
+            <header>
+                <img src="/src/images/logo-secoes.png" alt="">
+                <h2>Onde Estamos</h2>
+                <p>Avenida Brigadeiro Faria Lima, 777 Paraíba</p>
+            </header>
         </section>
 
-        <section>
+        <section class="contato" id="contato">
+            <div class="texto">
+                <h2>Contato</h2>
+                <address>
+                    Telefone: (99) 9 9999-9999 <br>
+                    Email:contato@cafeteria.com <br><br>
 
+                    Hórario de atendimento: <br> 
+                    seg a sex - 9h as 18h
+                </address>
+            </div>
         </section>
     </main>
     
-    <footer>
-        <a href=""></a>
+    <footer class="rodape">
+        <a href="index.html" class="logo">
+            <img src="/src/images/logo.jpg" alt="">
+        </a>
 
         <ul>
-            <li><a href="">Quem Somos</a></li>
-            <li><a href="">Onde Estamos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#onde-estamos">Onde Estamos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
-
-        <div class="redes-sociais"></div>
-        <div class="copyright">© 2022 Code Café</div>
+        <div  class="conteudo-de-baixo">
+            <div class="redes-sociais">
+                <a href="#" target="_blank" >
+                    <img src="src/images/insta.png" alt="Logo Instagram" title="Logo Instagram" class="facebook">
+                </a>
+                <a href="#" target="_blank" >
+                    <img src="src/images/face.png" alt="Logo Facebook" title="Logo Facebook" class="instagram">
+                </a>
+            </div>
+            <div class="copyright">© 2022 Code Café</div>
+        </div>
     </footer>
 </body>
 </html>
